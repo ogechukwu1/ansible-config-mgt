@@ -2,9 +2,9 @@
 - name: update web, nfs and db servers
   hosts: webservers, nfs, db
   remote_user: ec2-user
-  # become_user: root
-  # become: yes
-  # become_method: sudo
+  become_user: root
+  become: yes
+  become_method: sudo
   tasks:
   - name: delete wireshark
     yum:
@@ -14,8 +14,8 @@
 - name: update LB server
   hosts: lb
   remote_user: ubuntu
-  # become_user: root
-  # become: yes
+  become_user: root
+  become: yes
   tasks:
   - name: delete wireshark
     apt:
