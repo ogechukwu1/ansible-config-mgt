@@ -10,4 +10,3 @@
 -  hosts: webservers
 - name: Webserver assignment
   import_playbook: ../static-assignment/webservers.yml
-
