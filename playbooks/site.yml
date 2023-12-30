@@ -1,7 +1,1 @@
----
-- hosts: all
-- import_playbook: ../static-assignment/common-del.yml
 
-
-- hosts: all
-- import_playbook: ../static-assignment/uat_webservers.yml
